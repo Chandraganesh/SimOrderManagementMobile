@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.actool.compilation-results</key>
+	<dict>
+		<key>output-files</key>
+		<array>
+			<string>/Users/chandraganeshs/Documents/Development_Workspace/Post_Luxembourg_Learning/SIM_Order_Management_System/MAUI_Blazor_Hybrid_App/SimOrderManagementMobile/SimOrderManagementMobile/obj/Debug/net10.0-ios/iossimulator-x64/actool/bundle/Assets.car</string>
+			<string>/Users/chandraganeshs/Documents/Development_Workspace/Post_Luxembourg_Learning/SIM_Order_Management_System/MAUI_Blazor_Hybrid_App/SimOrderManagementMobile/SimOrderManagementMobile/obj/Debug/net10.0-ios/iossimulator-x64/actool/bundle/appicon60x60@2x.png</string>
+			<string>/Users/chandraganeshs/Documents/Development_Workspace/Post_Luxembourg_Learning/SIM_Order_Management_System/MAUI_Blazor_Hybrid_App/SimOrderManagementMobile/SimOrderManagementMobile/obj/Debug/net10.0-ios/iossimulator-x64/actool/bundle/appicon76x76@2x~ipad.png</string>
+			<string>/Users/chandraganeshs/Documents/Development_Workspace/Post_Luxembourg_Learning/SIM_Order_Management_System/MAUI_Blazor_Hybrid_App/SimOrderManagementMobile/SimOrderManagementMobile/obj/Debug/net10.0-ios/iossimulator-x64/actool/partial-info.plist</string>
+		</array>
+	</dict>
+</dict>
+</plist>
