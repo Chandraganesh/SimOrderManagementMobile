@@ -1,0 +1,48 @@
+﻿@page "/simtype"
+@inject NavigationManager NavManager
+
+<h3 class="header">Select SIM Type</h3>
+
+<div class="sim-type-container">
+    <button class="btn btn-outline-primary btn-lg" @onclick="() => GoToPlanSelection(0)">SIM only</button>
+    <button class="btn btn-outline-success btn-lg" @onclick="() => GoToPlanSelection(1)">SIM and Basic Plan</button>
+    <button class="btn btn-outline-warning btn-lg" @onclick="() => GoToPlanSelection(2)">SIM and Custom Plan</button>
+</div>
+
+<style>
+    .header {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sim-type-container {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+</style>
+
+
+@code {
+    void GoToPlanSelection(int option)
+    {
+        switch (option)
+        {
+            case 0:
+                NavManager.NavigateTo("/planselection?option=0");
+                break;
+            case 1:
+                NavManager.NavigateTo("/planselection?option=1");
+                break;
+            case 2:
+                NavManager.NavigateTo("/planselection?option=2");
+                break;
+        }
+    }
+}

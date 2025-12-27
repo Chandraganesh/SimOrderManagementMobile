@@ -1,17 +1,30 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    <header class="top-bar">
+        <button class="back-btn" @onclick="GoBack">⬅ Back</button>
+    </header>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
+    <main class="main-container">
         <article class="content px-4">
             @Body
         </article>
+
+        <div class="footer">Developed by Chandraganesh</div>
     </main>
 </div>
+
+<style>
+    .top-bar {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+
+@code {
+    private async Task GoBack()
+    {
+        await JS.InvokeVoidAsync("history.back");
+    }
+}
